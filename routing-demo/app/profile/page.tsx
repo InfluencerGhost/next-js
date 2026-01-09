@@ -1,3 +1,6 @@
-export default function Profile() {
-    return <h1>This is my profile</h1>
+interface ProfileProps {
+ name: string;
+}
+export default function Profile(props: ProfileProps ) {
+    return <h1>This is my profile {props.name}</h1>
 }
